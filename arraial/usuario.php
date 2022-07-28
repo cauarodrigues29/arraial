@@ -6,7 +6,7 @@
                 $senha = $_POST['senha'];
 
 
-                $sql2 = "select * from cliente where email='$email' ";
+                $sql2 = "select * from cadastro where email='$email' ";
                 $query = $con->query($sql2);
                 $row = $query->num_rows;
 
@@ -16,10 +16,10 @@
                         echo("1");
                     }
                    
-                    if ($result = mysqli_query($con, "INSERT INTO cliente(nome, email, senha) VALUES('$nome','$email','$senha')")) {
+                    if ($result = mysqli_query($con, "INSERT INTO cadastro(nome, email, senha) VALUES('$nome','$email',md5('$senha'))")) {
                         echo "<div style=color:white> --------------Cadastrado com sucesso!---------------- </div>";
                         
-                        header("Location: index.php");
+                        /*header("Location: index.php");*/
                        
                     }
                 } else {

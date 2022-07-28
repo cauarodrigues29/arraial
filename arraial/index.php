@@ -321,18 +321,21 @@ button{
         
         
         <?php
+include('db/conexao.php');
             if ((isset($_POST['senha'])) && (isset($_POST['email']))) {
                 require("db/conexao.php");
                 $email = $_POST['email'];
                 $senha = $_POST['senha'];
 
 
-                $sql2 = "select * from cliente where email='$email' ";
+                $sql2 = "select * from cadastro where email='$email' ";
                 $query = $con->query($sql2);
                 $row = $query->num_rows;
 
                 if ($row == 1) {
                     // teste de senha
+                
+                }
                     
 
  
@@ -341,7 +344,6 @@ button{
                     printf ("id: %s nome: %s email: %s  senha: %s \n", $row[0], $row[1], $row[2], $row[3]);
 
                 }
-            }
             
             ?>
     </form>

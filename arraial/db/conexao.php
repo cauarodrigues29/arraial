@@ -5,7 +5,7 @@
     $servidor = "localhost:3307";
     $usuario = "root";
     $senha = "";
-    $banco = "cadastro";
+    $banco = "arraial";
 
     $con = mysqli_connect($servidor,$usuario,$senha,$banco);
 

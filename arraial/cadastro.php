@@ -14,17 +14,17 @@
 
             <div class="input-group">
                 <img class="input-icon" src=>
-                <input type="text" placeholder="Nome Completo" name="nome" required>
+                <input type="text" placeholder="Nome Completo" id="nome" name="nome" required>
             </div>
 
             <div class="input-group">
                 <img class="input-icon" src=>
-                <input type="email" placeholder="Seu melhor email" name="email" required>
+                <input type="email" placeholder="Seu melhor email" id="username" name="email" required>
             </div>
 
             <div class="input-group">
                 <img class="input-icon" src=>
-                <input type="password" placeholder="Senha mínimo 6 Dígitos" name="senha" required>
+                <input type="password" placeholder="Senha mínimo 6 Dígitos" id="password" name="senha" required>
             </div>
 
 
